@@ -3,10 +3,11 @@ package com.fb.manage.mapper;
 import java.util.List;
 
 /**
- *
- * 基层dao
- * @author slc
- */
+* @Author: lcc
+* @Description:
+* @Date: 10:26 2018/3/20
+* @params  * @param null
+*/
 public interface BaseDao<T> {
     /**
      * 根据id进行查询
