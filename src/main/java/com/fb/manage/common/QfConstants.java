@@ -12,7 +12,8 @@ import java.util.Map;
  * @author lh
  */
 public class QfConstants {
-	
+
+
 	/**
 	 * 短信验证码有效时间 5分钟
 	 */
