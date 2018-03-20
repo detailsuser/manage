@@ -1,0 +1,153 @@
+#threePage{
+    width: 966px;
+    height: 875px;
+    background-color: #F5F5F5;
+}
+#threePage .balance{
+    width: 916px;
+    height: 970px;
+    margin-left: 50px;
+    margin-top: 14px;
+    position: absolute;
+    background-color: #ffffff;
+}
+.balance .round{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin: 39px auto 0 330px;
+    background-image: url("../img/round.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.round .s1{
+    display: block;
+    color: #ffffff;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 16px;
+}
+.round .number{
+    display: block;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 36px;
+}
+.center-table{
+    width: 815px;
+    height: 530px;
+    margin-left: 67px;
+    margin-top: 290px;
+    position: absolute;
+}
+.center-table table{
+    width: 815px;
+    border: 1px solid #f2f2f2;
+    border-collapse: collapse;
+}
+.center-table table td{
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    color: #676666;
+}
+.center-table table caption{
+    font-size: 32px;
+    color: #676666;
+    margin-bottom: 10px;
+}
+.center-table .withdrawal{
+    width: 220px;
+    height: 304px;
+    float: left;
+    margin-top: 52px;
+}
+.withdrawal .money{
+    width: 220px;
+    height: 220px;
+    background-image: url("../img/round.png");
+}
+.withdrawal .tx-money{
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    margin-top: 18px;
+}
+.withdrawal .tx-money input[type="button"]{
+    width: 66px;
+    height: 66px;
+    color: #ffffff;
+    outline: none;
+    display: block;
+    border-style: none;
+    background-color: #ffffff;
+    background-image: url("../img/tx.png");
+}
+.withdrawal .money input[type="text"]{
+    width: 120px;
+    height: 20px;
+    outline: none;
+    border-style: none;
+    margin: 107px 0 0 50px;
+    background-color: #8AC6FD;
+}
+.withdrawal .money input::-webkit-input-placeholder { /* WebKit browsers */
+    font-size: 16px;
+    font-family: 微软雅黑;
+    color: #ffffff;
+}
+.center-table .withdrawal-table{
+    width: 505px;
+    height: 263px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 82px;
+}
+.withdrawal-table table{
+    width: 505px;
+    border-collapse: collapse;
+    border: 1px solid #e5e5e5;
+}
+.withdrawal-table .table1 tr{
+    height: 30px;
+}
+.withdrawal-table .table1 td{
+    font-size: 14px;
+    color: #bfbfbf;
+    cursor: pointer;
+}
+.withdrawal-table .table1 input[type="text"]{
+    width: 70px;
+    float: right;
+    outline: none;
+    border-style: none;
+}
+.withdrawal-table .table2 tr{
+    height: 42px;
+    font-size: 16px;
+    /*color: #605f5f;*/
+}
+.withdrawal-table input::-webkit-input-placeholder { /* WebKit browsers */
+    font-size: 14px;
+    font-family: 微软雅黑;
+    color: #bfbfbf;
+}
+.withdrawal-table .table2 input[type="text"]{
+    width: 400px;
+    height: 30px;
+    outline: none;
+    border-style: none;
+    margin-left: 20px;
+}
+.withdrawal-table .table2 input[type="submit"]{
+    width: 44px;
+    height: 22px;
+    text-align: center;
+    color: #ffffff;
+    outline: none;
+    display: block;
+    margin: auto;
+    border-style: none;
+    background-color: #1988ec;
+}

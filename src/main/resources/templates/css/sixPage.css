@@ -1,0 +1,878 @@
+#sixPage{
+    width: 916px;
+    margin-top: 14px;
+    margin-left: 50px;
+    position: absolute;
+    font-family: 微软雅黑;
+    background-color: #ffffff;
+}
+#sixPage .lod-title ul{
+    width: 916px;
+    height: 41px;
+    background-color: #ededed;
+}
+/*=============================*/
+#sixPage .lod-title ul li{
+    float: left;
+    display: block;
+    width: 305px;
+    height: 41px;
+    color: #686666;
+    font-size: 16px;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+}
+.lod-title .out{
+    border-radius: 10px 10px 0 0;
+    background-color: #ffffff;
+}
+.lod-title .myout,.look-log{
+    border-radius: 10px 10px 0 0;
+}
+.lod-title ul li span{
+    display: block;
+    margin-top: 10px;
+}
+.lod-title ul li:after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background: #077FEA;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.lod-title ul li:hover:after{
+    width: 100%;
+}
+.left-container{
+    width: 916px;
+    height: 2011px;
+}
+.right-container{
+    width: 916px;
+    height: 860px;
+}
+.left-container .template{
+    min-width: 235px;
+    width: auto!important;
+    height: 20px;
+    margin-top: 48px;
+    margin-left: 25px;
+}
+.template p{
+    font-size: 16px;
+    color: #080808;
+}
+.template p span{
+    color: #9c9c9c;
+}
+.left-container .list-title{
+    width: 100%;
+    height: 35px;
+    margin-top: 23px;
+    font-size: 14px;
+}
+.list-title ul li{
+    float: left;
+    margin-right: 12px;
+    list-style-type: none;
+}
+.list-title .dayreport{
+    margin-left: 41px;
+}
+.list-title .dayreport,.weeksreport,.monthreport{
+    width: 65px;
+    height: 35px;
+    color: #616161;
+    outline: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+}
+.list-title .yearreport,.seasonreport,.technicalreport,.visitrecord,.resultsreport{
+    width: 93px;
+    min-width: 93px;
+    height: 35px;
+    color: #616161;
+    outline: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+}
+.list-title .dayreport{
+    background-color: #1998ec;
+    color: #ffffff;
+}
+.left-container .center-work{
+    width: 810px;
+    height: 1100px;
+    margin-top: 75px;
+    margin-left: 41px;
+    position: absolute;
+}
+.report1 span{
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #080808;
+}
+.report1 .switch{
+    width: 110px;
+    height: 20px;
+    color: #9c9c9c;
+    float: right;
+    font-size: 16px;
+    display: block;
+}
+.report1 .daywork{
+    width: 810px;
+    height: 230px;
+    border: 1px solid #ffffff;
+}
+.daywork .done{
+    width: 786px;
+    height: 193px;
+    display: block;
+    margin-left: 20px;
+    margin-top: 38px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+}
+/*文本域*/
+.center-work textarea{
+    resize: none;
+    width: 750px;
+    height: 193px;
+    outline: none;
+    margin-left: 28px;
+    border-style: none;
+}
+textarea::-webkit-input-placeholder{
+    font-size: 14px;
+    color: #9c9c9c;
+}
+.unfinishedwork{
+    width: 810px;
+    height: 230px;
+    margin-top: 46px;
+    border: 1px solid #ffffff;
+}
+.unfinishedwork .notdiv{
+    width: 786px;
+    height: 195px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 37px;
+    border: 1px solid #e5e5e5;
+}
+.coordinatework{
+    width: 810px;
+    height: 230px;
+    margin-top: 46px;
+    border: 1px solid #ffffff;
+}
+.coordinatework .c-div{
+    width: 786px;
+    height: 195px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 37px;
+    border: 1px solid #e5e5e5;
+}
+.note{
+    width: 810px;
+    height: 230px;
+    margin-top: 46px;
+    border: 1px solid #ffffff;
+}
+.note .no-div{
+    width: 786px;
+    height: 195px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 37px;
+    border: 1px solid #e5e5e5;
+}
+.bottom-work{
+    width: 820px;
+    height: 350px;
+    margin-top: 95px;
+}
+.bottom-work .attachment{
+    width: 300px;
+    height: 20px;
+}
+.attachment span{
+    display: block;
+    color: #080808;
+    font-size: 16px;
+}
+.attachment input[type="file"]{
+    float: right;
+    display: block;
+    opacity: 0;
+}
+.attachment .att{
+    font-size: 16px;
+    display: block;
+    color: #1998ec;
+    text-decoration: none;
+    float: right;
+}
+.bottom-work .send{
+    width: 180px;
+    height: 20px;
+    margin-top: 34px;
+}
+.send span{
+    display: block;
+    color: #080808;
+    font-size: 16px;
+}
+.send .heads{
+    color: #9c9c9c;
+    float: right;
+}
+.bottom-work .addressee{
+    width: 100%;
+    height: 78px;
+    margin-top: 43px;
+}
+.addressee ul li{
+    float: left;
+    display: block;
+    list-style-type: none;
+}
+.addressee .add{
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    border: 1px solid #9c9c9c;
+}
+.add .add-img{
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/plus.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    margin-top: 25%;
+    margin-left: 25%;
+    vertical-align: middle;
+}
+
+.bottom-work .submit{
+    width: 100%;
+    height: 65px;
+    margin-top: 90px;
+}
+.submit button{
+    width: 534px;
+    height: 65px;
+    display: block;
+    margin: auto;
+    outline: medium;
+    border-style: none;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #1998ec;
+}
+/*=========周报==========*/
+.report2{
+    font-size: 16px;
+}
+.report2 span {
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #080808;
+}
+.report2 .switch{
+    width: 110px;
+    height: 20px;
+    color: #9c9c9c;
+    float: right;
+    font-size: 16px;
+    display: block;
+}
+.report2 .daywork{
+    width: 810px;
+    height: 230px;
+    border: 1px solid #ffffff;
+}
+.report2 .help{
+    width: 810px;
+    height: 230px;
+    margin-top: 46px;
+    border: 1px solid #ffffff;
+}
+.report2 .help .help-div{
+    width: 786px;
+    height: 195px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 37px;
+    border: 1px solid #e5e5e5;
+}
+/*=========月报==========*/
+.report3{
+    font-size: 16px;
+}
+.report3 span {
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #080808;
+}
+.report3 .switch{
+    width: 110px;
+    height: 20px;
+    color: #9c9c9c;
+    float: right;
+    font-size: 16px;
+    display: block;
+}
+.report3 .daywork{
+    width: 810px;
+    height: 230px;
+    border: 1px solid #ffffff;
+}
+.report3 .help{
+    width: 810px;
+    height: 230px;
+    margin-top: 46px;
+    border: 1px solid #ffffff;
+}
+.report3 .help{
+    width: 810px;
+    height: 230px;
+    margin-top: 46px;
+    border: 1px solid #ffffff;
+}
+.report3 .help .help-div{
+    width: 786px;
+    height: 195px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 37px;
+    border: 1px solid #e5e5e5;
+}
+/*=========年度工作汇报==========*/
+.report4{
+    font-size: 16px;
+}
+.report4 span {
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #080808;
+}
+.report4 .switch{
+    width: 110px;
+    height: 20px;
+    color: #9c9c9c;
+    float: right;
+    font-size: 16px;
+    display: block;
+}
+.report4 .daywork{
+    width: 810px;
+    height: 230px;
+    border: 1px solid #ffffff;
+}
+.report4 .daywork .dwork{
+    width: 786px;
+    height: 193px;
+    display: block;
+    outline: medium;
+    margin-left: 20px;
+    margin-top: 38px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+}
+/*=========季度汇报==========*/
+.report5{
+    font-size: 16px;
+}
+.report5 span {
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #080808;
+}
+.report5 .switch{
+    width: 110px;
+    height: 20px;
+    color: #9c9c9c;
+    float: right;
+    font-size: 16px;
+    display: block;
+}
+.report5 .daywork{
+    width: 810px;
+    height: 230px;
+    border: 1px solid #ffffff;
+}
+.report5 .help{
+    width: 810px;
+    height: 230px;
+    margin-top: 46px;
+    border: 1px solid #ffffff;
+}
+.report5 .help{
+    width: 810px;
+    height: 230px;
+    margin-top: 46px;
+    border: 1px solid #ffffff;
+}
+.report5 .help .help-div{
+    width: 786px;
+    height: 195px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 37px;
+    border: 1px solid #e5e5e5;
+}
+/*=========技术汇报==========*/
+.report6{
+    font-size: 16px;
+}
+.report6 span {
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #080808;
+}
+.report6 .switch{
+    width: 110px;
+    height: 20px;
+    color: #9c9c9c;
+    float: right;
+    font-size: 16px;
+    display: block;
+}
+.report6 .daywork{
+    width: 810px;
+    height: 230px;
+    border: 1px solid #ffffff;
+}
+.report6 .help{
+    width: 810px;
+    height: 230px;
+    margin-top: 46px;
+    border: 1px solid #ffffff;
+}
+.report6 .help{
+    width: 810px;
+    height: 230px;
+    margin-top: 46px;
+    border: 1px solid #ffffff;
+}
+.report6 .help .help-div{
+    width: 786px;
+    height: 195px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 37px;
+    border: 1px solid #e5e5e5;
+}
+/*=========拜访记录==========*/
+.report7{
+    font-size: 16px;
+}
+.report7 span {
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #080808;
+}
+.report7 .switch{
+    width: 110px;
+    height: 20px;
+    color: #9c9c9c;
+    float: right;
+    font-size: 16px;
+    display: block;
+}
+.report7 .daywork{
+    width: 300px;
+    height: 90px;
+    border: 1px solid red;
+}
+.report7 .object{
+    width: 200px;
+    height: 35px;
+    margin-left: 20px;
+    margin-top: 38px;
+    border: 1px solid darkgreen;
+}
+.object .contacts{
+    width: 140px;
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+}
+.report7 .unfinishedwork{
+    width: 500px;
+    height: 100px;
+    border: 1px solid #ffffff;
+}
+.report7 .adbook{
+    float: right;
+}
+.down-list{
+    width: 100px;
+    height: 20px;
+    margin-top: 38px;
+    margin-left: 20px;
+
+}
+.report7 .help{
+    width: 810px;
+    height: 230px;
+    margin-top: 46px;
+    border: 1px solid #ffffff;
+}
+.report7 .help{
+    width: 810px;
+    height: 230px;
+    margin-top: 46px;
+    border: 1px solid #ffffff;
+}
+.report7 .help .help-div{
+    width: 786px;
+    height: 195px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 37px;
+    border: 1px solid #e5e5e5;
+}
+/*=========业绩日报==========*/
+.report8{
+    font-size: 16px;
+}
+.report8 span {
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #080808;
+}
+.report8 .switch{
+    width: 110px;
+    height: 20px;
+    color: #9c9c9c;
+    float: right;
+    font-size: 16px;
+    display: block;
+}
+.report8 .dayturnover{
+    width: 180px;
+    height: 70px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+}
+.report8 input[type="text"]{
+    width: 145px;
+    height: 35px;
+    outline: none;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+}
+/*=====开关按钮=======*/
+.chooseBtn {
+    display: none;
+}
+.choose-label {
+    box-shadow: #ccc 0px 0px 0px 1px;
+    width: 40px;
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    background-color: #bdbdbd;
+    overflow: hidden;
+}
+
+.choose-label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: 20;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.chooseBtn:checked + label.choose-label:before {
+    left: 20px;
+}
+.chooseBtn:checked + label.choose-label {
+    background-color: #1998ec;
+}
+/*=====我发出的=====*/
+.right-container .title{
+    width: 750px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 23px;
+    margin-top: 39px;
+}
+.right-container .title input[type="text"]{
+    width: 107px;
+    height: 34px;
+    outline: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+}
+.right-container .title .date{
+    margin-left: 130px;
+    margin-right: 38px;
+}
+.right-container .log-container{
+    width: 770px;
+    height: 674px;
+    margin-left: 64px;
+    margin-top: 57px;
+}
+.right-container .log-container .log-to{
+    width: 355px;
+    height: 309px;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+}
+.log-to .log-title{
+    width: 355px;
+    height: 74px;
+}
+.log-title .round-title{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-left: 17px;
+    margin-top: 14px;
+    border-radius: 50%;
+    background-color: #1988ec;
+}
+.round-title span{
+    display: block;
+    margin: auto;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 15px;
+    color: #ffffff;
+    vertical-align: middle;
+}
+.log-title .log-name{
+    color: #1988ec;
+    display: block;
+    margin-top: 35px;
+    position: absolute;
+    font-size: 14px;
+    margin-left: 77px;
+}
+.log-title .log-type{
+    color: #acacac;
+    display: block;
+    margin-right: 44px;
+    margin-top: 35px;
+    font-size: 14px;
+    float: right;
+}
+.log-to .log-center{
+    width: 355px;
+    height: 161px;
+}
+.log-center table{
+    margin-top: 29px;
+    margin-left: 26px;
+    line-height: 30px;
+}
+.log-center table .td1{
+    color: #acacac;
+    font-size: 14px;
+}
+.log-center table .td2{
+    color: #555555;
+    font-size: 14px;
+}
+.log-to .log-bottom{
+    width: 355px;
+    height: 43px;
+    border-radius: 0 0 10px 10px;
+    background-color: #EEEEEE;
+}
+.log-bottom ul li{
+    display: block;
+    margin-top: 15px;
+    float: left;
+    font-size: 14px;
+    list-style-type: none;
+}
+.log-bottom ul li span{
+    color: #555555;
+}
+.log-bottom ul li .dy{
+    margin-left: 19px;
+    margin-right: 15px;
+}
+.log-bottom ul li .delete{
+    margin-left: 76px;
+    margin-right: 11px;
+}
+.log-bottom ul li .details{
+    margin-left: 12px;
+}
+.log-bottom ul li a{
+    text-decoration: none;
+    color: #1988ec;
+}
+/*=======看日志========*/
+.container .readlog{
+    width: 916px;
+    height: 860px;
+}
+.readlog .title{
+    width: 800px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 23px;
+    margin-top: 39px;
+}
+.readlog .title input[type="text"]{
+    width: 107px;
+    height: 34px;
+    outline: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+}
+.readlog .title .date{
+    margin-left: 50px;
+    margin-right: 20px;
+}
+.readlog .title .sender{
+    margin-left: 31px;
+}
+.readlog .readlog-center{
+    width: 819px;
+    height: 445px;
+    margin: 38px auto 0px auto;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+}
+.readlog-center .r_readlog{
+    width: 819px;
+    height: 273px;
+}
+.r_readlog .log_top{
+    width: 170px;
+    height: 60px;
+    margin-left: 32px;
+    margin-top: 26px;
+}
+.readlog-center .r_title{
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #1988ec;
+}
+.r_title span{
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    display: block;
+    color: #ffffff;
+}
+.readlog-center .log_title{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 75px;
+    display: block;
+}
+.log_title p{
+    color: #080808;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 12px;
+}
+.log_title .p_date{
+    font-size: 12px;
+    color: #bfbfbf;
+}
+.r_readlog table{
+    width: 800px;
+    height: 90px;
+    margin-top: 36px;
+}
+.r_readlog table td{
+    text-align: right;
+    font-size: 16px;
+    color: #8a8a8a;
+}
+.readlog-center .read{
+    width: 100px;
+    height: 32px;
+    margin-top: 8px;
+    margin-left: 52px;
+}
+.read p{
+    display: block;
+    margin-top: 5px;
+    float: left;
+    color: #bfbfbf;
+    font-size: 12px;
+}
+.read .read_round{
+    width: 32px;
+    height: 32px;
+    float: right;
+    background-color: #1988ec;
+    border-radius: 50%;
+}
+.readlog-center .r_bottom{
+    width: 753px;
+    height: 55px;
+    margin-top: 30px;
+    margin-left: 32px;
+}
+.r_bottom input[type="text"]{
+    width: 606px;
+    height: 55px;
+    float: left;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+}
+.r_bottom input[type="submit"]{
+    width: 139px;
+    height: 53px;
+    font-size: 24px;
+    color: #ffffff;
+    outline: none;
+    border-style: none;
+    float: right;
+    border-radius: 10px;
+    background-color: #7ac2ff;
+}

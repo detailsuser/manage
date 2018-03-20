@@ -1,0 +1,59 @@
+#t-div2 {
+    width: 870px;
+    height: 800px;
+    margin-top: 14px;
+    margin-left: 40px;
+    position: absolute;
+    background-color: #ffffff;
+}
+#t-div2 .s1{
+    position: relative;
+    margin-top: 60px;
+}
+#t-div2 table {
+    width: 870px;
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-bottom: 16px;
+}
+
+#t-div2 table td {
+    border: 1px solid #e5e5e5;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    color: #080808;
+    text-align: center;
+}
+
+#t-div2 tr {
+    height: 28px;
+}
+
+#t-div2 .s1,.s2,.s3 {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    color: #080808;
+    font-weight: bold;
+}
+#t-div2 span{
+
+}
+#tr1, #tr2, #tr3 {
+    background-color: #ededed;
+    color: #080808;
+}
+
+#t-div2 span {
+    color: #080808;
+}
+#t-div2 input[type="text"]{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    border-style: none;
+    outline: none;
+    background-color: #ffffff;
+}

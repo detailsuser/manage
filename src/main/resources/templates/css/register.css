@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+div {
+    display: block;
+}
+
+html, body {
+    width: 100%;
+    font-family: 微软雅黑;
+    background-color: #fffdf9;
+}
+#login{
+    width: 332px;
+    height: 680px;
+    margin: 114px auto 0 auto;
+}
+.lg{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url("../img/blue-logo.png");
+}
+.p1{
+    font-size: 24px;
+    color: #198aed;
+    margin: 31px auto 5px auto;
+    text-align: center;
+}
+.p2{
+    font-size: 18px;
+    color: #198aed;
+    margin-bottom: 88px;
+    text-align: center;
+}
+input[type="text"]{
+    width: 332px;
+    height: 62px;
+    outline: none;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 36px;
+    border-radius: 31px;
+    border: 1px solid #198aed;
+    background-color: #F5F5F5;
+}
+input[type="password"]{
+    width: 332px;
+    height: 62px;
+    outline: none;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 36px;
+    border-radius: 31px;
+    border: 1px solid #198aed;
+    background-color: #F5F5F5;
+}
+input::-webkit-input-placeholder{
+    color: #198aed;
+}
+input:-moz-placeholder{
+    color: #198aed;
+}
+input::-moz-placeholder{
+    color: #198aed;
+}
+input:-ms-input-placeholder{
+    color: #198aed;
+}
+button{
+    width: 170px;
+    height: 56px;
+    outline: none;
+    color: #ffffff;
+    display: block;
+    font-size: 17px;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 28px;
+    margin: 18px auto 0 auto;
+    background-color: #198aed;
+}
+#ts{
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    color: red;
+    text-align: center;
+}

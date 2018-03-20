@@ -1,0 +1,390 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+div {
+    display: block;
+}
+
+html, body {
+    width: 100%;
+    font-family: 微软雅黑;
+    background-color: #F5F5F5;
+}
+.head {
+    width: 100%;
+    min-width: 1150px;
+    height: 100px;
+    position: absolute;
+    background-color: #9c9c9c;
+}
+.head .head_content{
+    width: 1090px;
+    height: 52px;
+    margin: 46px auto;
+}
+.head_left {
+    width: 152px;
+    height: 52px;
+    float: left;
+    background-image: url("img/logo.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.head_right {
+    width: 450px;
+    height: 30px;
+    float: right;
+    margin-top: 4px;
+    font-size: 17px;
+}
+
+.head_right ul li {
+    display: block;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    list-style-type: none;
+    float: left;
+    position: relative;
+}
+
+.nav_title > li:after {
+    content: "";
+    width: 0;
+    height: 8px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.nav_title > li:hover:after {
+    width: 100%;
+}
+
+.head_right ul li a {
+    font-size: 17px;
+    color: #080808;
+    font-family: 微软雅黑;
+    text-decoration: none;
+}
+.center {
+    width: 1190px;
+    height: 845px;
+    margin: auto;
+}
+.center_content{
+    width: 100%;
+    min-width: 1150px;
+    margin-top: 100px;
+    height: auto!important;
+    min-height: 800px;
+    position: absolute;
+}
+/*========左侧导航栏======*/
+.center_left {
+    width: 224px;
+    height: 845px;
+    float: left;
+    position: absolute;
+    background-color: #ededed;
+}
+
+.center_left .one {
+    background-color: #ffffff;
+}
+.nav ul li {
+    width: 224px;
+    height: 88px;
+    display: block;
+    text-align: center;
+    list-style-type: none;
+}
+
+.nav ul li a {
+    font-family: 微软雅黑;
+    color: #8d8d8d;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 88px;
+    display: block;
+}
+/*=======右侧部分内容======*/
+.center_right {
+    width: 916px;
+    height: 845px;
+    float: right;
+    margin-left: 50px;
+    margin-top: 14px;
+    background-color: #ffffff;
+}
+#onePage .title{
+    width: 735px;
+    height: 88px;
+    margin-top: 62px;
+    margin-left: 54px;
+}
+#onePage .title span{
+    font-size: 16px;
+    color: #080808;
+}
+#onePage .title .title_content{
+    width: 675px;
+    height: 56px;
+    outline: none;
+    margin-top: 12px;
+    margin-left: 58px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+}
+#onePage .text{
+    width: 735px;
+    height: 322px;
+    outline: none;
+    margin-top: 43px;
+    margin-left: 54px;
+}
+.text .text_content{
+    width: 675px;
+    height: 290px;
+    outline: none;
+    margin-top: 12px;
+    margin-left: 58px;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+}
+.text_content textarea{
+    width: 665px;
+    height: 280px;
+    outline: none;
+    resize: none;
+    margin: auto;
+    display: block;
+    border-style: none;
+    max-width: 670px;
+    max-height: 290px;
+}
+#onePage .attachment{
+    width: 210px;
+    height: 132px;
+    margin-top: 22px;
+    margin-left: 54px;
+}
+.attachment .file{
+    position: absolute;
+    margin-left: 73px;
+    margin-top: 20px;
+    display: block;
+    opacity: 0;
+}
+.attachment .upload{
+    width: 102px;
+    height: 38px;
+    outline: none;
+    color: #848484;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 58px;
+    border-radius: 8px;
+    border-style: none;
+}
+.attachment .top{
+    width: 30px;
+    height: 30px;
+    outline: none;
+    margin-top: 38px;
+    margin-left: 58px;
+    border-style: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+.attachment p{
+    display: inline-block;
+    position: absolute;
+    margin-left: 16px;
+    margin-top: 42px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #636363;
+}
+#onePage .send-message{
+    width: 100%;
+    height: 50px;
+    margin-top: 66px;
+}
+.send-message input[type="submit"]{
+    width: 132px;
+    height: 42px;
+    margin: auto;
+    outline: none;
+    color: #ffffff;
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #1998ec;
+}
+#threePage{
+    width: 916px;
+    height: 947px;
+    background-color: #ffffff;
+}
+#threePage .meeting_minutes{
+    width: 916px;
+    height: 40px;
+}
+.meeting_minutes ul li{
+    width: 458px;
+    height: 40px;
+    float: left;
+    font-size: 16px;
+    color: #080808;
+    text-align: center;
+    list-style-type: none;
+}
+.meeting_minutes span{
+    display: block;
+    margin-top: 10px;
+}
+#threePage .minutes_one,.minutes_two{
+    width: 916px;
+    height: 907px;
+}
+.minutes_one table{
+    width: 700px;
+    margin-top: 64px;
+    margin-left: 86px;
+}
+.minutes_one table tr{
+    height: 77px;
+}
+.minutes_one table .input1{
+    width: 583px;
+    margin-left: 20px;
+}
+.minutes_one table input[type="text"]{
+    height: 56px;
+    outline: none;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+.minutes_one table .cause{
+    width: 583px;
+    height: 126px;
+    margin-left: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 21px;
+    border: 1px solid #e5e5e5;
+}
+.minutes_one table .meeting-content{
+    width: 583px;
+    height: 273px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+}
+.minutes_one table span{
+    display: block;
+}
+.minutes_one input[type="submit"]{
+    width: 168px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    margin: 58px auto;
+    border-radius: 5px;
+    background-color: #1998ec;
+}
+.minutes_two table{
+    width: 640px;
+    margin-top: 98px;
+    margin-left: 58px;
+    border-collapse: collapse;
+}
+.minutes_two table tr{
+
+    line-height: 30px;
+}
+.minutes_two table td{
+    font-size: 16px;
+    color: #080808;
+}
+.minutes_two table .t_date{
+    font-size: 16px;
+    color: #1a87ec;
+}
+.minutes_two table .check a{
+    font-size: 16px;
+    color: #1a87ec;
+    text-decoration: none;
+}
+#twoPage{
+    width: 916px;
+    height: 947px;
+    background-color: #ffffff;
+}
+#twoPage .system_title{
+    width: 278px;
+    height: 70px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.system_title .hy{
+    color: #080808;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.system_title .rsgl{
+    color: #080808;
+    font-size: 12px;
+    margin-top: 17px;
+}
+#twoPage .system_center{
+    width: 764px;
+    height: 800px;
+    overflow: auto;
+    color: #080808;
+    margin-top: 90px;
+    font-size: 18px;
+    line-height: 31px;
+    margin-left: 68px;
+}
+.system_center span{
+    display: block;
+    margin-bottom: 13px;
+}
+.system_center p{
+    display: block;
+    margin-left: 47px;
+    margin-bottom: 40px;
+}
+.system_center .attachment1{
+    width: 745px;
+    height: 1290px;
+    border: 1px solid black;
+}
+.attachment1 table{
+    font-size: 14px;
+    border-collapse: collapse;
+}
+.attachment1 table th{
+    border: 1px solid black;
+}
+.attachment1 table td{
+    border: 1px solid black;
+}
+.attachment1 table tr{
+    height: auto!important;
+}
