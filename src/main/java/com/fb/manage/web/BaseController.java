@@ -2,16 +2,20 @@ package com.fb.manage.web;
 
 import com.fb.manage.entity.User;
 import com.fb.manage.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * 基础控制
  * @author
  */
+@Slf4j
 @RestController
 @RequestMapping("/user")
 public class BaseController {
@@ -27,16 +31,9 @@ public class BaseController {
     }
 
     @RequestMapping(value = "index" , method = RequestMethod.GET)
-    public int hello1(User user){
-      //检查有没有该用户
-      //检查密码
-      //
-      User user2 =  userService.select();
-        System.out.println(user2.toString());
-        if (user.getJob() != null){
-            return 1;
-        }
-        return 2;
+    public int hello1(User rescod){
+
+        return userService.selectJob(rescod);
     }
 
 
