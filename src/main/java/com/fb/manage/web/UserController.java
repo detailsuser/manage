@@ -25,6 +25,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
     @RequestMapping(value = "hello" )
 //    @ResponseBody
     public String hello(){
