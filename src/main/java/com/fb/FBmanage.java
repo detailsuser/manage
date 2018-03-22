@@ -15,8 +15,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableJms
 @MapperScan("com.fb.manage.mapper")
 @ComponentScan(basePackages ={"com.fb"} )
-public class App {
+public class FBmanage {
     public static void main(String[] args) {
-        SpringApplication.run(App.class);
+        SpringApplication.run(FBmanage.class);
     }
 }

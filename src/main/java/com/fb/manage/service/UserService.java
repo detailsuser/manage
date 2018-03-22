@@ -12,6 +12,9 @@ public interface UserService {
 
    public User select();
 
-   public int selectJob(User rescod);
+   public Integer selectJob(User rescod);
 
+    int selectTel(User rescod);
+
+    User selectUser(User rescod);
 }

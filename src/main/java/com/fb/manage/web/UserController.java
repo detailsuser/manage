@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -21,10 +23,8 @@ import java.util.List;
 @RequestMapping("/user")
 public class UserController {
 
-
     @Autowired
     private UserService userService;
-
 
     @RequestMapping(value = "hello" )
 //    @ResponseBody
@@ -32,10 +32,48 @@ public class UserController {
         return "index";
     }
 
-    @RequestMapping(value = "index" , method = RequestMethod.GET)
-    public int hello1(User rescod){
+    /**
+     * android登入
+     * @param rescod
+     * @return
+     */
+    @RequestMapping(value = "login" , method = RequestMethod.GET)
+    @ResponseBody
+    public int login(User rescod){
 
-        return userService.selectJob(rescod);
+        int i = userService.selectJob(rescod);
+        if (i ==1){
+            return 1;
+        }
+        return 0;
+    }
+
+    /**
+     * web登入
+     * @param rescod
+     * @return
+     */
+    @RequestMapping(value = "loginweb" , method = RequestMethod.GET)
+    @ResponseBody
+    public int loginweb(User rescod,HttpServletRequest request, HttpServletResponse response){
+
+        int i = userService.selectTel(rescod);
+        if (i ==1){
+            return 1;
+        }
+        return 0;
+    }
+
+ /**
+     * 查询个人信息
+     * @param rescod
+     * @return
+     */
+    @RequestMapping(value = "selectUser" , method = RequestMethod.GET)
+    @ResponseBody
+    public User selectUser(User rescod){
+
+       return userService.selectUser(rescod);
     }
 
 
