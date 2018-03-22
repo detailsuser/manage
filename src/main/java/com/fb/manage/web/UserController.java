@@ -4,6 +4,7 @@ import com.fb.manage.entity.User;
 import com.fb.manage.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,18 +17,18 @@ import java.util.List;
  * @author
  */
 @Slf4j
-@RestController
+@Controller
 @RequestMapping("/user")
-public class BaseController {
+public class UserController {
 
 
     @Autowired
     private UserService userService;
 
     @RequestMapping(value = "hello" )
-    @ResponseBody
+//    @ResponseBody
     public String hello(){
-        return "hello";
+        return "index";
     }
 
     @RequestMapping(value = "index" , method = RequestMethod.GET)
